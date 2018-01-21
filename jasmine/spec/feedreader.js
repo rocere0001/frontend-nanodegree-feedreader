@@ -62,11 +62,9 @@ $(function() {
     * https://gist.github.com/davilious/9503539
     * */
     describe('The menu', function () {
-        //menu-hidden on load
         it("body element has 'menu-hidden' tag", function () {
             expect($('body').hasClass('menu-hidden')).toBeTruthy();
         });
-        //menu is being shown and hidden on click
         it("body element toogles 'menu-hidden' tag when hamburger icon is clicked", function(){
              $('.menu-icon-link').trigger('click');
             expect($('body').hasClass("menu-hidden")).toBeFalsy();
