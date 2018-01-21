@@ -12,4 +12,5 @@ Toggle Class: https://gist.github.com/davilious/9503539<br/>
 Getting HTML Properties: https://christosmonogios.com/2016/09/08/How-To-Test-The-HTML-Elements-And-Their-DOM-Properties-When-Using-The-Jasmine-Framework/<br/>
 Test URL Fragment: https://stackoverflow.com/questions/35973205/expect-to-test-url-fragment-with-protractor-and-jasmine<br/>
 Does String begin with http(s)?: https://stackoverflow.com/questions/4643142/regex-to-test-if-string-begins-with-http-or-https<br/>
- 
+ Not using Truthy and Falsy:
+ https://vincenttunru.com/toBeTruthy-vs-toBe-true/

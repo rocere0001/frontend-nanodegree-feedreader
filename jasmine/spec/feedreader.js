@@ -51,7 +51,6 @@ $(function() {
            allFeeds.forEach(function (feed) {
                expect(feed.name).toBeDefined();
                expect(feed.name.length).toBeGreaterThan(0);
-               expect(typeof feed.name).toBe("string");
            });
         });
     });
@@ -63,14 +62,14 @@ $(function() {
     * */
     describe('The menu', function () {
         it("body element has 'menu-hidden' tag", function () {
-            expect($('body').hasClass('menu-hidden')).toBeTruthy();
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });
         it("body element toogles 'menu-hidden' tag when hamburger icon is clicked", function(){
              $('.menu-icon-link').trigger('click');
-            expect($('body').hasClass("menu-hidden")).toBeFalsy();
+            expect($('body').hasClass("menu-hidden")).toBe(false);
 
             $('.menu-icon-link').trigger('click');
-            expect($('body').hasClass("menu-hidden")).toBeTruthy();
+            expect($('body').hasClass("menu-hidden")).toBe(true);
         });
     });
 
