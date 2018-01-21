@@ -58,6 +58,7 @@ $(function() {
 
     /* TODO: Write a new test suite named "The menu"
     * https://christosmonogios.com/2016/09/08/How-To-Test-The-HTML-Elements-And-Their-DOM-Properties-When-Using-The-Jasmine-Framework/
+    * https://gist.github.com/davilious/9503539
     * */
     describe('The menu', function () {
         //menu-hidden on load
@@ -67,7 +68,10 @@ $(function() {
         //menu is being shown and hidden on click
         it("body element toogles 'menu-hidden' tag when hamburger icon is clicked", function(){
              $('.menu-icon-link').trigger('click');
-            expect(body.className).not.toContain("menu-hidden");
+            expect($('body')).className.not.toContain("menu-hidden");
+
+            $('.menu-icon-link').trigger('click');
+            expect($('body')).className.toContain("menu-hidden");
         });
     });
 
